@@ -7,7 +7,7 @@ Repositório destinado ao armazenamento de desafios práticos de programação e
 Este repositório tem como finalidade:
 
 - praticar lógica de programação;
-- consolidar fundamentos da linguagem Java;
+- consolidar fundamentos da linguagem Python;
 - exercitar resolução de problemas;
 - desenvolver boas práticas de estruturação de código;
 - acompanhar evolução técnica ao longo dos estudos.
@@ -16,10 +16,12 @@ Este repositório tem como finalidade:
 
 ## Tecnologias Utilizadas
 
-- Java
+- Python
 - Git
 - GitHub
-- Spring Boot
+- SQL
+- Pandas
+- Numpy
 ---
 
 ## Status
