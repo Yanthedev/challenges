@@ -1,6 +1,6 @@
 # Challenges
 
-Repositório destinado ao armazenamento de desafios práticos de programação e estudos relacionados ao desenvolvimento de software.
+Repositório destinado ao armazenamento de desafios práticos de programação e estudos relacionados ao desenvolvimento de software e dados.
 
 ## Objetivo
 
