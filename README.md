@@ -1,29 +1,32 @@
 # Challenges
 
-Repositório destinado ao armazenamento de desafios práticos, exercícios e projetos desenvolvidos durante minha jornada de aprendizado em Desenvolvimento Full Stack.
+Repositório destinado ao armazenamento de desafios práticos, exercícios e projetos desenvolvidos durante minha jornada de aprendizado em Desenvolvimento Backend com Java.
 
 ## Objetivo
 
 Este repositório tem como finalidade:
 
-- praticar lógica de programação;
-- consolidar fundamentos de desenvolvimento web;
-- exercitar resolução de problemas;
-- desenvolver boas práticas de programação;
-- aprimorar conhecimentos em Front-end e Back-end;
-- acompanhar minha evolução técnica ao longo dos estudos.
+* praticar lógica de programação;
+* consolidar fundamentos da linguagem Java;
+* exercitar resolução de problemas;
+* desenvolver boas práticas de programação;
+* aprofundar conhecimentos em desenvolvimento Backend;
+* estudar arquitetura de software e APIs REST;
+* acompanhar minha evolução técnica ao longo dos estudos.
 
 ---
 
 ## Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- React
-- Node.js
-- Git
-- GitHub
+* Java
+* Programação Orientada a Objetos (POO)
+* Collections Framework
+* Estruturas de Dados
+* Spring Boot
+* APIs REST
+* SQL
+* Git
+* GitHub
 
 ---
 
@@ -33,11 +36,15 @@ Cada pasta contém desafios, exercícios ou pequenos projetos desenvolvidos dura
 
 Exemplos:
 
-- Lógica de Programação
-- JavaScript
-- React
-- Node.js
-- Projetos Full Stack
+* Lógica de Programação
+* Java Fundamentals
+* Programação Orientada a Objetos
+* Collections
+* Estruturas de Dados
+* Spring Boot
+* APIs REST
+* Banco de Dados SQL
+* Projetos Backend
 
 ---
 
@@ -45,8 +52,8 @@ Exemplos:
 
 🚧 Em desenvolvimento contínuo.
 
-Novos desafios e projetos serão adicionados conforme avanço nos estudos e na construção de aplicações completas para Web.
+Novos desafios e projetos serão adicionados conforme avanço nos estudos e no desenvolvimento de aplicações Backend utilizando Java e Spring Boot.
 
 ---
 
-> 💻 Aprendendo, praticando e evoluindo um commit por vez.
+> ☕ Aprendendo, praticando e evoluindo um commit por vez.
