@@ -19,5 +19,7 @@ public class Program {
         } else {
             System.out.println("Not Weird");
         }
+
+        sc.close();
     }
 }
