@@ -31,4 +31,15 @@ public class Biblioteca {
         livros.add(livro1);
         livros.add(livro2);
     }
+
+    public List<Livro> listarLivrosDisponiveis() {
+        List<Livro> disponiveis = new ArrayList<>();
+
+        for (Livro livro : this.livros) {
+            if (livro.getDisponivel()) {
+                disponiveis.add(livro);
+            }
+        }
+        return disponiveis;
+    }
 }
