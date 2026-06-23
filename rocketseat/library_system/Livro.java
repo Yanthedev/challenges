@@ -33,7 +33,7 @@ public class Livro {
         return autor;
     }
 
-    public boolean isDisponivel() {
+    public boolean getDisponivel() {
         return disponivel;
     }
 
@@ -43,6 +43,10 @@ public class Livro {
 
     public LocalDate getDataAtualizacao() {
         return dataAtualizacao;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 
     public void setDataAtualizacao(LocalDate dataAtualizacao) {
