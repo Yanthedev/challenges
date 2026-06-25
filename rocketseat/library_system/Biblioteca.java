@@ -32,6 +32,7 @@ public class Biblioteca {
         livros.add(livro2);
     }
 
+    // Método que lista os livros disponíveis.
     public List<Livro> listarLivrosDisponiveis() {
         List<Livro> disponiveis = new ArrayList<>();
 
@@ -42,4 +43,33 @@ public class Biblioteca {
         }
         return disponiveis;
     }
+
+    // Método que seleciona o livro com base no seu id.
+    public Livro buscarLivroPorId(BigInteger id) {
+        for (Livro livro : this.livros) {
+            if (livro.getId().equals(id)) {
+                return livro;
+            }
+        }
+        return null;
+    }
+
+    // Método que realiza o empréstimo de um livro.
+    public void registrarEmprestimo(Livro livro, String nomeCliente) {
+        // Gera um ID simples para o empréstimo
+        BigInteger novoId = BigInteger.valueOf(this.emprestimos.size() + 1);
+
+        // 2. Instancia o empréstimo
+        Emprestimo novoEmprestimo = new Emprestimo(
+                novoId,
+                livro,
+                nomeCliente,
+                LocalDate.now(), // Data de hoje
+                null // Data de devolução começa nula
+        );
+
+        // 3. Adiciona na lista de controle da biblioteca
+        this.emprestimos.add(novoEmprestimo);
+    }
+
 }
