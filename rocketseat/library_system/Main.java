@@ -1,6 +1,7 @@
 package rocketseat.library_system;
 
-import java.util.ArrayList;
+import java.math.BigInteger;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,9 +29,29 @@ public class Main {
                         System.out.println("Não há livros no momento.");
                     } else {
                         for (Livro livro : livrosDisponiveis) {
-                            System.out.println("ID: " + livro.getId() + " - Título: " + livro.getTitulo() + " - Autor: "
-                                    + livro.getAutor().getNome());
+                            System.out.println("ID: " + livro.getId() + " - Título: " + livro.getTitulo());
                         }
+                        System.out.print("Digite o seu nome para o registro: ");
+                        String nomeCliente = scanner.next();
+                        System.out.print("Digite o ID do livro que deseja pegar emprestado: ");
+                        BigInteger idEscolhido = scanner.nextBigInteger();
+
+                        Livro livroEscolhido = biblioteca.buscarLivroPorId(idEscolhido);
+
+                        if (livroEscolhido != null && livroEscolhido.getDisponivel()) {
+                            System.out.println("Livro encontrado: " + livroEscolhido.getTitulo());
+
+                            livroEscolhido.setDisponivel(false);
+                            livroEscolhido.setDataAtualizacao(LocalDate.now());
+
+                            // 2. Salva o empréstimo no histórico da biblioteca
+                            biblioteca.registrarEmprestimo(livroEscolhido, nomeCliente);
+
+                            System.out.println("Empréstimo realizado com sucesso para " + nomeCliente + "!");
+                        } else {
+                            System.out.println("Livro indisponível ou não cadastrado.");
+                        }
+
                     }
                     respostaValida = true;
                     break;
